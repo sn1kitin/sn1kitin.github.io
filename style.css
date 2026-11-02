@@ -5,6 +5,14 @@
   --border: #e1e1e1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -33,6 +41,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo a {
+  color: inherit;
+  text-decoration: none;
 }
 
 nav a {
