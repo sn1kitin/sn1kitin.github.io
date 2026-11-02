@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+  
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Semen Nikitin</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Portfolio</h1>
+      <nav>
+        <a href="#over">Over</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-icon">⌨️</div>
+    <h2>Semen Nikitin</h2>
+    <p class="subtitle">Student Software Developer</p>
+    <p class="description">
+      Student software development met focus op backend, op zoek naar een stageplek in een team met echte projecten.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-black">Neem Contact Op</a>
+      <a href="#projecten" class="btn-white">Bekijk Projecten</a>
+    </div>
+  </section>
+
+  <!-- Over Mij -->
+  <section id="over" class="about">
+    <div class="container about-content">
+      <h2>Over Mij</h2>
+      <p>
+        Ik volg de opleiding Software Developer (mbo niveau 4) aan het Alfa-college in Groningen, nu in mijn tweede jaar.
+        Op school werk ik met PHP en MySQL, en mijn focus ligt op backend.
+      </p>
+      <p>
+        In mijn eigen tijd leer ik Laravel en werk ik aan eigen projecten, zoals deze portfolio website.
+        Zo leer ik het meest: iets maken, vastlopen en het oplossen.
+      </p>
+      <p>
+        Ik zoek een stage waar ik kan meebouwen aan echte backend-projecten en kan leren van ervaren developers.
+      </p>
+    </div>
+  </section>
+
+<!-- Projecten -->
+<section id="projecten" class="projects">
+  <div class="container">
+    <h2>Projecten</h2>
+    <div class="projects-grid">
+      <a href="https://github.com/sn1kitin/sn1kitin.github.io" target="_blank" class="project-card">
+        <img src="img/portfolio.jpg" alt="Screenshot van de portfolio website">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Een website gebouwd met HTML en CSS.</p>
+          <span class="project-link">Bekijk Project →</span>
+        </div>
+      </a>
+      <a href="https://github.com/sn1kitin/forum-api" target="_blank" class="project-card">
+        <img src="img/forum.jpg" alt="Postman response van de Forum API">
+        <div class="project-info">
+          <h3>Forum API</h3>
+          <p>REST API voor een forum in vanilla PHP (MVC, Composer/PSR-4). Threads, topics en replies ophalen en toevoegen, met JSON en de juiste HTTP-statuscodes.</p>
+          <span class="project-link">Bekijk Project →</span>
+        </div>
+      </a>
+      <a href="https://stagematch.alwaysdata.net/demo/" target="_blank" class="project-card">
+        <img src="img/stagematch.jpg" alt="Screenshot van StageMatch">
+        <div class="project-info">
+          <h3>StageMatch API</h3>
+          <p>REST API in vanilla PHP en MySQL die studenten en bedrijven koppelt op basis van skills. Berekent per vacature een matchpercentage, met login via tokens en aparte rollen voor student en bedrijf.</p>
+          <span class="project-link">Bekijk Project →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Neem Contact Op</h2>
+    <p class="contact-email">
+      Mail me direct op <a href="mailto:so.nikitin@student.alfa-college.nl">so.nikitin@student.alfa-college.nl</a> of gebruik het formulier hieronder.
+    </p>
+
+    <div class="socials">
+      <a href="https://github.com/sn1kitin" aria-label="GitHub" target="_blank"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/so.nikitin@student.alfa-college.nl" method="POST">
+      <input type="hidden" name="_subject" value="Nieuw bericht via portfolio">
+      <input type="text" name="naam" placeholder="Naam" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="bericht" placeholder="Bericht" required></textarea>
+      <button type="submit" class="btn-black">Verstuur Bericht</button>
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <p> 2026 Semen Nikitin.</p>
+  </footer>
+</body>
+</html>
